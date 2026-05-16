@@ -1,0 +1,28 @@
+[PASS] Test 1: zero+zero = +0
+[PASS] Test 2: 1.0+0.0 = 1.0
+[PASS] Test 3: 1.0+2.0 = 3.0
+[PASS] Test 4: -1.0+2.0 = 1.0
+[PASS] Test 5: 1.5+2.5 = 4.0
+[PASS] Test 6: 100.0+0.5 = 100.5
+[PASS] Test 7: -3.5+1.5 = -2.0
+[PASS] Test 8: 1.5+(-0.5) = 1.0
+[PASS] Test 9: 65536.0+1.0 = 65537.0
+[PASS] Test 10: min_normal+min_normal = next_normal
+[PASS] Test 11: max_normal+1.0 = max_normal (1.0 negligible)
+[PASS] Test 12: 2^{127}+2^{127}=overflow_to_+Inf
+[PASS] Test 13: QNaN+normal = NaN (propagate first NaN)
+[PASS] Test 14: +Inf+normal = +Inf
+[PASS] Test 15: -Inf+normal = -Inf
+[PASS] Test 16: +Inf+(+Inf) = +Inf
+[PASS] Test 17: +Inf+(-Inf) = NaN
+[PASS] Test 18: 1.0+(-1.0) = +0 (exact cancellation)
+[PASS] Test 19: 8.0+(-7.0) = 1.0 (cancellation)
+[PASS] Test 20: -0+(-0) = -0
+[PASS] Test 21: 1.0+2^{-24} = 1.0 (RNE tie LSB_even=donot_round)
+[PASS] Test 22: 1.0+2^{-23}+2^{-24} = 1.0+2^{-22} (RNE tie LSB_odd=round_to_even)
+[PASS] Test 23: NaN+Inf = NaN
+[PASS] Test 24: min_subnormal+min_subnormal = 2*min_subnormal
+[PASS] Test 25: min_subnormal+min_normal = normal_with_LSB_set
+[PASS] Test 26: -0+(+0) = +0
+---
+Summary: 26/26 passed, 0 failed
