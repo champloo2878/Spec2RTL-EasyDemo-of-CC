@@ -47,6 +47,9 @@ Debate能够一定程度上减少模型幻觉，就像长思维链；
 
 
 ### claude code的Subagent用法以及自动化工作流的构建
+#### 禁止claude code询问：
+claude --dangerously-skip-permissions
+
 #### Subagent的创建
 - 方法一：通过claude code中的/agents创建：
   - 手动输入参数：1 子agent的系统提示词 2 子agent的使用条件（when to use）
